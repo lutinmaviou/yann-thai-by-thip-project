@@ -1,0 +1,16 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    width: 100%;
+    background: gold;
+    color: darkorchid;
+}
+
+#starters {
+    background: #f15026;
+    box-shadow: 0 -30px 100px #c72e07;
+    color: white;
+}
