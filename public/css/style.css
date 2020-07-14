@@ -6,11 +6,11 @@ body {
 header {
     width: 100%;
     background: gold;
-    color: darkorchid;
+    color: #384974;
 }
 
 #starters {
     background: #f15026;
-    box-shadow: 0 -30px 100px #c72e07;
+    box-shadow: 0 -30px 100px #b36603;
     color: white;
 }
