@@ -1,3 +1,6 @@
+html {
+    scroll-behavior: smooth;
+}
 body {
     margin: 0;
     padding: 0;
@@ -7,10 +10,70 @@ header {
     width: 100%;
     background: gold;
     color: #384974;
+    background-image: linear-gradient(gold, gold, #f15026);
 }
 
 #starters {
     background: #f15026;
-    box-shadow: 0 -30px 100px #b36603;
     color: white;
+}
+
+#title {
+    width: 80%;
+}
+
+#mainCourses {
+    background: #28b19a;
+    color: white;
+}
+
+#desserts {
+    background: #db7bb6;
+    color: white;
+}
+
+#contact {
+    background: #5f5868;
+    color: white;
+}
+
+.card-img-top {
+    max-width: 300px;
+    height: 200px;
+}
+
+#nav-first-link:hover {
+    border-radius: 3px 0 0 3px;
+    background-color: #ff592685 !important;
+}
+
+#nav-last-link:hover {
+    border-radius: 0 3px 3px 0;
+    background-color: #ff592685 !important;
+}
+
+#second:hover, #third:hover {
+    background-color: #ff592685 !important;
+}
+
+#tkz {
+    background: rgba(255, 166, 0, 0.486);
+    padding-left: 20rem;
+    padding-right: 20rem;
+}
+
+#section-starters {
+    background: #f14f26;
+}
+
+#section-mainCourses {
+    background: #28b19a;
+}
+
+#section-desserts {
+    background: #f14f26;
+}
+
+#section-contact {
+    background: #f14f26;
 }

@@ -1,179 +1,241 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
-    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
-    integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous">
-  </script>
-  <link rel="stylesheet" href="public/css/style.css">
-    <title>Thaï by Thipititinois</title>
+    <!-- Fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <!-- Bootstrap core CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.0/css/mdb.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="public/css/style.css">
+    <title>Thaï by Thip</title>
 </head>
 
 <body>
 
-    <header class="container-fluid pt-5 pb-5 mb-1 d-flex justify-content-between">
-        <img src="public/img/logo drapeau thai╠ê.jpeg" alt="drapeau thaïlandais" width="230px" height="150px">
-        <h1>Thaï by Thip</h1>
-        <img src="public/img/thai-garuda.png" alt="garuda" width="180px" height="180px">
+    <header class="container-fluid pt-5 pb-5 d-flex justify-content-around">
+        <img src="public/img/logo drapeau thai╠ê.jpeg" alt="Drapeau thaïlandais" width="230px" height="150px">
+        <div class="text-center">
+            <h1 class="font-weight-bold animated bounce">Thaï by Thip</h1>
+            <h3 id="title" class="mt-5 mx-auto">Vente de plats typiquement Thaïlandais à emporter et en livraison</h3>
+        </div>
+        <img src="public/img/thai-garuda.png" alt="Garuda" width="180px" height="180px">
     </header>
 
-    <section>
-        <h2 id="starters" class="pt-3 pb-3 mb-3 text-center">Entrées</h2>
-            <div class="container-fluid">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark pt-0 pb-0">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mx-auto font-weight-bold">
+                <li class="nav-item active">
+                    <a id="nav-first-link" class="nav-link bg-dark p-2" href="#starters">Entrées<span
+                            class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                    <a id="second" class="nav-link bg-dark p-2" href="#mainCourses">Plats<span
+                            class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                    <a id="third" class="nav-link bg-dark p-2" href="#desserts">Desserts<span
+                            class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                    <a id="nav-last-link" class="nav-link bg-dark p-2" href="#contact">Contact<span
+                            class="sr-only">(current)</span></a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <section id="section-starters" class="animated slideInUp">
+        <h2 id="starters" class="pt-4 pb-4 mb-3 text-center">Entrées</h2>
+        <div>
+            <div class="container-fluid bg-light w-75 p-4">
                 <div class="d-flex flex-wrap justify-content-between">
-                <div class="card text-center" style="width: 18rem;">
-                    <img class="card-img-top" src="public/img/nems.jpeg" alt="">
-                 <div class="card-body">
-                    <p class="card-text">Nems (porc ou poulet) 4 pièces 5€</p>
-                 </div>
-          </div>
-        <div class="card text-center" style="width: 18rem;">
-            <img class="card-img-top" src="public/img/yakitori.jpeg" alt="">
-            <div class="card-body">
-              <p class="card-text">Brochette yakitori</p>
-            </div>
-          </div>
-        <div class="card text-center" style="width: 18rem;">
-            <img class="card-img-top" src="public/img/karaage.jpeg" alt="">
-            <div class="card-body">
-              <p class="card-text">Poulet karaage</p>
-            </div>
-          </div>
-        <div class="card text-center" style="width: 18rem;">
-            <img class="card-img-top" src="public/img/beignet crevette .jpeg" alt="">
-            <div class="card-body">
-              <p class="card-text">Beignets de crevette</p>
-            </div>
-          </div>
-        <div class="card text-center" style="width: 18rem;">
-            <img class="card-img-top" src="public/img/samousa.jpeg" alt="">
-            <div class="card-body">
-              <p class="card-text">Samoussa</p>
-            </div>
-          </div>
+                    <div class="card text-center mb-4" style="width: 18rem;">
+                        <img class="card-img-top" src="public/img/nems.jpeg" alt="">
+                        <div class="card-body">
+                            <p class="card-text">Nems (porc ou poulet) 4 pièces 5€</p>
+                        </div>
+                    </div>
+                    <div class="card text-center mb-4" style="width: 18rem;">
+                        <img class="card-img-top" src="public/img/yakitori.jpeg" alt="">
+                        <div class="card-body">
+                            <p class="card-text">Brochette yakitori</p>
+                        </div>
+                    </div>
+                    <div class="card text-center mb-4" style="width: 18rem;">
+                        <img class="card-img-top" src="public/img/karaage.jpeg" alt="">
+                        <div class="card-body">
+                            <p class="card-text">Poulet karaage</p>
+                        </div>
+                    </div>
+                    <div class="card text-center mb-4" style="width: 18rem;">
+                        <img class="card-img-top" src="public/img/beignet crevette .jpeg" alt="">
+                        <div class="card-body">
+                            <p class="card-text">Beignets de crevette</p>
+                        </div>
+                    </div>
+                    <div class="card text-center mb-4" style="width: 18rem;">
+                        <img class="card-img-top" src="public/img/samousa.jpeg" alt="">
+                        <div class="card-body">
+                            <p class="card-text">Samoussa</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
-    <hr>
 
-    <section id="block2">
-        <h2 id="plat">Plats</h2>
-        <div id="plats">
-
-            <figure>
-                <img src="public/img/pad thai.jpeg" alt="">
-                <figcaption> Pad Thaï (crevette ou poulet)</figcaption>
-            </figure>
-
-            <figure>
-                <img src="public/img/khao pad.jpeg" alt="">
-                <figcaption> Riz sauté (Khao pad crevette ou poulet)</figcaption>
-            </figure>
-
-            <figure>
-                <img src="public/img/bo bun.jpeg" alt="">
-                <figcaption>Bo bun (crevette ou poulet)</figcaption>
-            </figure>
-
-            <figure>
-                <img src="public/img/poulet coco .jpeg" alt="">
-                <figcaption>Poulet coco</figcaption>
-            </figure>
-
-            <figure>
-                <img src="public/img/pouet curry .jpeg" alt="">
-                <figcaption>Poulet red curry</figcaption>
-            </figure>
-
-            <figure>
-                <img src="public/img/basilic poulet.jpeg" alt="">
-                <figcaption>Poulet sauté basilic</figcaption>
-            </figure>
-
-            <figure>
-                <img src="public/img/masaman.jpeg" alt="">
-                <figcaption>Poulet masaman</figcaption>
-            </figure>
-
-            <figure>
-                <img src="public/img/porc caramel.jpeg" alt="">
-                <figcaption>Porc caramel</figcaption>
-            </figure>
-
-            <figure>
-                <img src="public/img/laab moo.jpeg" alt="">
-                <figcaption>Tartare thai au porc (Laab moo)</figcaption>
-            </figure>
-
-            <figure>
-                <img src="public/img/Yum woon sen 2.jpeg" alt="">
-                <figcaption>Salade Thaï aux fruit de mer <br>
-                    et champignon noir ( Yum woon sen )</figcaption>
-            </figure>
-
+    <section id="section-mainCourses" class="mt-3">
+        <h2 id="mainCourses" class="pt-4 pb-4 mb-3 text-center">Plats</h2>
+        <div class="container-fluid bg-light w-75 p-4">
+            <div class="d-flex flex-wrap justify-content-between">
+                <div class="card text-center mb-4" style="width: 18rem;">
+                    <img class="card-img-top" src="public/img/pad thai.jpeg" alt="Pad Thaï (crevette ou poulet)">
+                    <div class="card-body">
+                        <p class="card-text">Pad Thaï (crevette ou poulet)</p>
+                    </div>
+                </div>
+                <div class="card text-center mb-4" style="width: 18rem;">
+                    <img class="card-img-top" src="public/img/khao pad.jpeg"
+                        alt="Riz sauté (Khao pad crevette ou poulet)">
+                    <div class="card-body">
+                        <p class="card-text">Riz sauté (Khao pad crevette ou poulet)</p>
+                    </div>
+                </div>
+                <div class="card text-center mb-4" style="width: 18rem;">
+                    <img class="card-img-top" src="public/img/bo bun.jpeg" alt="Bo bun (crevette ou poulet)">
+                    <div class="card-body">
+                        <p class="card-text">Bo bun (crevette ou poulet)</p>
+                    </div>
+                </div>
+                <div class="card text-center mb-4" style="width: 18rem;">
+                    <img class="card-img-top" src="public/img/poulet coco .jpeg" alt="Poulet coco">
+                    <div class="card-body">
+                        <p class="card-text">Poulet coco</p>
+                    </div>
+                </div>
+                <div class="card text-center mb-4" style="width: 18rem;">
+                    <img class="card-img-top" src="public/img/pouet curry .jpeg" alt="Poulet red curry">
+                    <div class="card-body">
+                        <p class="card-text">Poulet red curry</p>
+                    </div>
+                </div>
+                <div class="card text-center mb-4" style="width: 18rem;">
+                    <img class="card-img-top" src="public/img/basilic poulet.jpeg" alt="Poulet sauté basilic">
+                    <div class="card-body">
+                        <p class="card-text">Poulet sauté basilic</p>
+                    </div>
+                </div>
+                <div class="card text-center mb-4" style="width: 18rem;">
+                    <img class="card-img-top" src="public/img/masaman.jpeg" alt="Poulet masaman">
+                    <div class="card-body">
+                        <p class="card-text">Poulet masaman</p>
+                    </div>
+                </div>
+                <div class="card text-center mb-4" style="width: 18rem;">
+                    <img class="card-img-top" src="public/img/porc caramel.jpeg" alt="Porc caramel">
+                    <div class="card-body">
+                        <p class="card-text">Porc caramel</p>
+                    </div>
+                </div>
+                <div class="card text-center mb-4" style="width: 18rem;">
+                    <img class="card-img-top" src="public/img/laab moo.jpeg" alt="Tartare thai au porc (Laab moo)">
+                    <div class="card-body">
+                        <p class="card-text">Tartare thai au porc (Laab moo)</p>
+                    </div>
+                </div>
+                <div class="card text-center mb-4" style="width: 18rem;">
+                    <img class="card-img-top" src="public/img/Yum woon sen 2.jpeg"
+                        alt="Salade Thaï aux fruit de mer et champignon noir ( Yum woon sen )">
+                    <div class="card-body">
+                        <p class="card-text">Salade Thaï aux fruit de mer et champignon noir ( Yum woon sen )</p>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
-    <hr>
 
-    <section id="block3">
-
-        <h2 id="dessert">Desserts</h2>
-
-        <div id="desserts">
-
-
-            <figure>
-                <img src="public/img/perle coco.jpeg" alt="">
-                <figcaption> Perle de coco</figcaption>
-            </figure>
-
-
-            <figure>
-                <img src="public/img/salade de fruit .jpeg" alt="">
-                <figcaption>Salade de fruits Thaï</figcaption>
-            </figure>
-
+    <section id="section-desserts" class="mt-3">
+        <h2 id="desserts" class="pt-4 pb-4 mb-3 text-center">Desserts</h2>
+        <div class="container-fluid bg-light w-75 p-4">
+            <div class="d-flex flex-wrap justify-content-between">
+                <div class="card text-center mb-4" style="width: 18rem;">
+                    <img class="card-img-top" src="public/img/perle coco.jpeg" alt="Perle de coco">
+                    <div class="card-body">
+                        <p class="card-text">Perle de coco</p>
+                    </div>
+                </div>
+                <div class="card text-center mb-4" style="width: 18rem;">
+                    <img class="card-img-top" src="public/img/salade de fruit .jpeg" alt="Salade de fruits Thaï">
+                    <div class="card-body">
+                        <p class="card-text">Salade de fruits Thaï</p>
+                    </div>
+                </div>
+            </div>
         </div>
-
     </section>
-    <hr>
-    <section id="contact">
-        <h2>Contact</h2>
-        <p class="textcontact">Ceci est juste pour recupere quelque avis pour l'ouverture d'un restaurant à emporter et
-            en livraison de plats traditionnel Thaïlandais. 
-            Sur le bassin d'Arcachon secteur de Lège- cap-Ferret.
+
+    <section id="section-contact" class="mt-3">
+        <h2 id="contact" class="pt-4 pb-4 mb-5 text-center">Contact</h2>
+
+        <form class="w-50 mx-auto bg-light p-5">
+            <fieldset class="text-center mb-5">
+                <legend>
+                    <span class="titre-contact">Contact info</span><br>
+                    <span class="text-form">Thaï by Thip</span><br />
+                    <span class="text-form">Lége-Cap-Ferret (Indéfini)</span><br />
+                    <span class="text-form">Tel: 06 xx xx xx xx (Indéfini)</span>
+                </legend>
+            </fieldset>
+            <div class="form-group">
+                <label for="name">Votre nom</label>
+                <input type="text" class="form-control" id="name" aria-describedby="nameHelp" placeholder="Nom"
+                    required>
+            </div>
+            <div class="form-group">
+                <label for="email">Votre email</label>
+                <input type="email" class="form-control" id="email" aria-describedby="emailHelp"
+                    placeholder="exemple@hotmail.fr" required>
+                <small id="emailHelp" class="form-text text-muted">Nous ne partagerons jamais votre email avec quelqu'un
+                    d'autre.</small>
+            </div>
+            <div class="form-group">
+                <label for="textarea">Votre message</label>
+                <textarea class="form-control" id="textarea" rows="3" required></textarea>
+            </div>
+            <div class="text-center">
+                <button type="submit" class="btn btn-primary">Envoyer</button>
+            </div>
+        </form>
+
+        <p id="tkz" class="text-center mt-5 pt-3 pb-3 font-weight-bold">Cette page est juste pour récuperer quelque avis
+            en vue de l'ouverture d'un
+            restaurant à emporter et
+            en livraison de plats traditionnels Thaïlandais sur le bassin d'Arcachon, secteur de Lège-Cap-Ferret.<br />
+            Merci de votre contribution et nous espérons à bientôt !
         </p>
-        <div id="contacte">
-            <form class="formulaire">
-                <fieldset>
-                    <legend>
-                        <span class="titre-contact"> Contact info</span><br>
-                        <span class="text-form"> Thaï by Thip</span> <br>
-                        Lége-Cap-Ferret (indefinie) <br>
-                        Tel: 06 xx xx xx xx (indefinie)
-                    </legend>
-                    <div class="contacte">
-                        <label for="nameinput">Votre Nom:</label>
-                        <input type="text" name="firthname" id="nameinput" placeholder="Name" required>
-                    </div>
-                    <div class="contact1">
-                        <label for="emailinput">Votre email:</label>
-                        <input type="email" name="email" id="emailinput" placeholder="exemple@hotmail.fr" required>
-                    </div>
 
-                    <div class="contact2">
-                        <label for="message">Votre message</label>
-                        <textarea name="message" id="message" cols="30" rows="8" placeholder="votre message"
-                            required></textarea>
-                    </div>
-                    <input id="send" type="submit" value="Envoyer">
-                </fieldset>
-            </form>
+    </section>
+
+    <footer>
+        <div class="d-flex justify-content-center">
+            <p class="mr-5">Copyright © 2020 Thaï By Thip Tous droits réservés</p>
+            <a href="#">| Mentions légales |</a>
         </div>
-    </section></body>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous">
+        </script>
+</body>
 
 </html>
