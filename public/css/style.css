@@ -23,12 +23,12 @@ header {
 }
 
 #mainCourses {
-    background: #28b19a;
+    background: gold;
     color: white;
 }
 
 #desserts {
-    background: #db7bb6;
+    background: #f15026;
     color: white;
 }
 
@@ -63,15 +63,15 @@ header {
 }
 
 #section-starters {
-    background: #f14f26;
+    background-image: linear-gradient(#f15026, #f15026, gold);
 }
 
 #section-mainCourses {
-    background: #28b19a;
+    background-image: linear-gradient(gold, #f15026);
 }
 
 #section-desserts {
-    background: #f14f26;
+    background-image: linear-gradient(#f15026, #f15026, gold);
 }
 
 #section-contact {
