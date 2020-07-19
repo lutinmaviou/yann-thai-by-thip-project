@@ -19,34 +19,35 @@
     <header class="container-fluid pt-5 pb-5 d-flex justify-content-around">
         <img src="public/img/logo drapeau thai╠ê.jpeg" alt="Drapeau thaïlandais" width="230px" height="150px">
         <div class="text-center">
-            <h1 class="font-weight-bold animated bounce">Thaï by Thip</h1>
+            <h1 class="font-weight-bold animated bounce ml-n5">Thaï by Thip</h1>
             <h3 id="title" class="mt-5 mx-auto">Vente de plats typiquement Thaïlandais à emporter et en livraison</h3>
         </div>
-        <img src="public/img/thai-garuda.png" alt="Garuda" width="180px" height="180px">
+        <img src="public/img/thai-garuda.png" alt="Garuda" width="160px" height="160px">
     </header>
 
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark pt-0 pb-0">
+<div id="siteWrapper">
+    <nav id="navbar" class="navbar navbar-expand-lg navbar-dark bg-dark pt-0 pb-0">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
 
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div id="navbarSupportedContent" class="collapse navbar-collapse">
             <ul class="navbar-nav mx-auto font-weight-bold">
                 <li class="nav-item active">
-                    <a id="nav-first-link" class="nav-link bg-dark p-2" href="#starters">Entrées<span
+                    <a id="nav-first-link" class="nav-link bg-dark py-2 px-5" href="#starters">Entrées<span
                             class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item active">
-                    <a id="second" class="nav-link bg-dark p-2" href="#mainCourses">Plats<span
+                    <a id="second" class="nav-link bg-dark py-2 px-5" href="#mainCourses">Plats<span
                             class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item active">
-                    <a id="third" class="nav-link bg-dark p-2" href="#desserts">Desserts<span
+                    <a id="third" class="nav-link bg-dark py-2 px-5" href="#desserts">Desserts<span
                             class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item active">
-                    <a id="nav-last-link" class="nav-link bg-dark p-2" href="#contact">Contact<span
+                    <a id="nav-last-link" class="nav-link bg-dark py-2 px-5" href="#contact">Contact<span
                             class="sr-only">(current)</span></a>
                 </li>
             </ul>
@@ -56,7 +57,7 @@
     <section id="section-starters" class="animated slideInUp">
         <h2 id="starters" class="pt-4 pb-4 text-center">Entrées</h2>
         <div>
-            <div class="container-fluid bg-light w-75 p-4">
+            <div class="container-fluid bg-light w-75 p-5">
                 <div class="d-flex flex-wrap justify-content-between">
                     <div class="card text-center mb-4" style="width: 18rem;">
                         <img class="card-img-top" src="public/img/nems.jpeg" alt="">
@@ -96,7 +97,7 @@
     <section id="section-mainCourses">
         <h2 id="mainCourses" class="pt-4 pb-4 text-center">Plats</h2>
         <div>
-            <div class="container-fluid bg-light w-75 p-4">
+            <div class="container-fluid bg-light w-75 p-5">
                 <div class="d-flex flex-wrap justify-content-between">
                     <div class="card text-center mb-4" style="width: 18rem;">
                         <img class="card-img-top" src="public/img/pad thai.jpeg" alt="Pad Thaï (crevette ou poulet)">
@@ -168,7 +169,7 @@
 
     <section id="section-desserts">
         <h2 id="desserts" class="pt-4 pb-4 text-center">Desserts</h2>
-        <div class="container-fluid bg-light w-75 p-4">
+        <div class="container-fluid bg-light w-75 p-5">
             <div class="d-flex flex-wrap justify-content-between">
                 <div class="card text-center mb-4" style="width: 18rem;">
                     <img class="card-img-top" src="public/img/perle coco.jpeg" alt="Perle de coco">
@@ -187,9 +188,9 @@
     </section>
 
     <section id="section-contact">
-        <h2 id="contact" class="pt-4 pb-4 mb-5 text-center">Contact</h2>
+        <h2 id="contact" class="pt-4 pb-4 mb-3 text-center">Contact</h2>
 
-        <form class="w-50 mx-auto bg-light p-5">
+        <form class="w-50 mx-auto bg-light">
             <fieldset class="text-center mb-5">
                 <legend>
                     <span class="titre-contact">Contact info</span><br>
@@ -215,18 +216,19 @@
                 <textarea class="form-control" id="textarea" rows="3" required></textarea>
             </div>
             <div class="text-center">
-                <button type="submit" class="btn btn-primary">Envoyer</button>
+                <button type="submit" class="btn btn-primary mt-3">Envoyer</button>
             </div>
         </form>
 
-        <p id="tkz" class="text-center mt-5 pt-3 pb-3 font-weight-bold">Cette page est juste pour récuperer quelque avis
+        <p id="thanks" class="text-center mt-5 pt-3 pb-5 mb-5 font-weight-bold">Cette page est faite pour récuperer quelque avis
             en vue de l'ouverture d'un
-            restaurant à emporter et
-            en livraison de plats traditionnels Thaïlandais sur le bassin d'Arcachon, secteur de Lège-Cap-Ferret.<br />
+            restaurant à emporter et en livraison de plats traditionnels Thaïlandais sur le bassin d'Arcachon, secteur
+            de Lège-Cap-Ferret.<br />
             Merci de votre contribution et nous espérons à bientôt !
         </p>
 
     </section>
+</div>
 
     <footer>
         <div class="d-flex justify-content-center">
@@ -239,6 +241,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
         integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous">
         </script>
+        <script src="public/js/navbar.js"></script>
 </body>
 
 </html>

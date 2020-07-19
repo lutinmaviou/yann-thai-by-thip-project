@@ -9,7 +9,7 @@ body {
 header {
     width: 100%;
     background: gold;
-    color: #384974;
+    color: #4a629e;
     background-image: linear-gradient(gold, gold, #f15026);
 }
 
@@ -33,7 +33,7 @@ header {
 }
 
 #contact {
-    background: #5f5868;
+    background: gold;
     color: white;
 }
 
@@ -56,10 +56,10 @@ header {
     background-color: #ff592685 !important;
 }
 
-#tkz {
-    background: rgba(255, 166, 0, 0.486);
+#thanks {
     padding-left: 20rem;
     padding-right: 20rem;
+    color: #384974;
 }
 
 #section-starters {
@@ -67,7 +67,7 @@ header {
 }
 
 #section-mainCourses {
-    background-image: linear-gradient(gold, #f15026);
+    background-image: linear-gradient(gold, gold, #f15026);
 }
 
 #section-desserts {
@@ -75,5 +75,13 @@ header {
 }
 
 #section-contact {
-    background: #f14f26;
+    background-image: linear-gradient(gold, gold, #f15026);
 }
+
+form {
+    padding: 5rem;
+}
+
+/* #siteWrapper {margin-top:-80px;}
+#siteWrapper nav {height:80px;background:#000;}
+#siteWrapper nav.fixed {position:fixed;width:100%;top:0;left:0;} */
